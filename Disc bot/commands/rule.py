@@ -6,7 +6,7 @@ class Rules(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(hidden=True)
     @commands.has_permissions(administrator=True)
     async def rule(self, ctx):
         embed = Embed(
